@@ -10,6 +10,10 @@ int main(){
   if(op=='+'){
       addittion(first ,second);
        
+    }else if (op=='-')
+  {
+    substraction(first,second);
+     
     }else{
       printf("choose the appropriate operation");
     }
@@ -19,4 +23,12 @@ int main(){
       int c;
       c = a+b;
       printf("the addition of these two numbers is %d + %d = %d", a,b,c);
+  
 }
+substraction(int a,int b)
+{
+  int c;
+  c = a-b;
+  printf("the substraction of these two numbers is %d + %d = %d", a,b,c);
+}
+
