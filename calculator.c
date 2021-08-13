@@ -17,8 +17,10 @@ void substraction(int a,int b)
 int main(){
   int first=0, second=0,op;
   
-  printf("enter the two numbers\n");
-     scanf("%d,%d", &first, &second);
+  printf("enter the first number\n");
+     scanf("%d", &first);
+     printf("enter the second number\n");
+     scanf("%d",&second);
    printf("select the operation to perform (+,-):\n for addition press 1 \n for substraction press 2\n ");
    scanf("%d", &op);
   /* write the functions for addition and substractions in the next branches*/
