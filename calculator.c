@@ -1,34 +1,37 @@
 #include <stdio.h>
+int a=0;
+int b=0;
+void addittion(int a,int b)
+{
+      int c;
+      c = a+b;
+      printf("\n the addition of these two numbers is %d + %d = %d", a,b,c);
+  
+}
+void substraction(int a,int b)
+{
+  int c;
+  c = a-b;
+  printf("\n the substraction of these two numbers is %d + %d = %d", a,b,c);
+}
 int main(){
-  int first, second;
-  char op;
-  printf("enter the two numbers");
-     scanf("%d %d", &first, &second);
-   printf("select the operation to perform (+):");
-   scanf("%c", &op);
+  int first=0, second=0,op;
+  
+  printf("enter the two numbers\n");
+     scanf("%d,%d", &first, &second);
+   printf("select the operation to perform (+,-):\n for addition press 1 \n for substraction press 2\n ");
+   scanf("%d", &op);
   /* write the functions for addition and substractions in the next branches*/
-  if(op=='+'){
+  if(op==1){
       addittion(first ,second);
        
-    }else if (op=='-')
+    }else if(op==2)
   {
     substraction(first,second);
      
     }else{
-      printf("choose the appropriate operation");
+      printf("\n choose the appropriate operation\n");
     }
 }
- addittion(int a,int b)
-{
-      int c;
-      c = a+b;
-      printf("the addition of these two numbers is %d + %d = %d", a,b,c);
-  
-}
-substraction(int a,int b)
-{
-  int c;
-  c = a-b;
-  printf("the substraction of these two numbers is %d + %d = %d", a,b,c);
-}
+ 
 
